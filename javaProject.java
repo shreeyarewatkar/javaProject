@@ -16,7 +16,7 @@ class Employee {
     }
 }
 
-// Full-Time Employee
+
 class FullTimeEmployee extends Employee {
     double bonus;
 
@@ -30,7 +30,7 @@ class FullTimeEmployee extends Employee {
     }
 }
 
-// Part-Time Employee
+
 class PartTimeEmployee extends Employee {
     int hoursWorked;
     double hourlyRate;
@@ -46,13 +46,13 @@ class PartTimeEmployee extends Employee {
     }
 }
 
-// Main Class
+
 public class javaProject {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        // Full-Time Input
+        
         System.out.println("Enter Full-Time Employee Details:");
         sc.nextLine(); // clear buffer
         System.out.print("Enter Name: ");
@@ -69,7 +69,7 @@ public class javaProject {
 
         Employee e1 = new FullTimeEmployee(name1, id1, baseSalary, bonus);
 
-        // Part-Time Input
+        
         System.out.println("\nEnter Part-Time Employee Details:");
         sc.nextLine(); // clear buffer
         System.out.print("Enter Name: ");
@@ -86,7 +86,7 @@ public class javaProject {
 
         Employee e2 = new PartTimeEmployee(name2, id2, hours, rate);
 
-        // FINAL OUTPUT (only salary)
+        
         System.out.println("\nFull Time Employee Salary: " + e1.calculateSalary());
         System.out.println("Part Time Employee Salary: " + e2.calculateSalary());
 
