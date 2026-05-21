@@ -71,7 +71,7 @@ public class javaProject {
 
         
         System.out.println("\nEnter Part-Time Employee Details:");
-        sc.nextLine(); // clear buffer
+        sc.nextLine(); 
         System.out.print("Enter Name: ");
         String name2 = sc.nextLine();
 
@@ -90,6 +90,6 @@ public class javaProject {
         System.out.println("\nFull Time Employee Salary: " + e1.calculateSalary());
         System.out.println("Part Time Employee Salary: " + e2.calculateSalary());
 
-        sc.close();
+        
     }
 }
